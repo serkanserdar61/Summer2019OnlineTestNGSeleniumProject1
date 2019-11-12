@@ -24,7 +24,8 @@ public class locators {
                 System.out.println(each.getText());
             }
             }
-            driver.close();
+
+        driver.quit();
 
     }
 }
