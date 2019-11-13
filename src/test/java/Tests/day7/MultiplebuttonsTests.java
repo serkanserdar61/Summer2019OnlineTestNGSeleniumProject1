@@ -33,6 +33,7 @@ public class MultiplebuttonsTests {
 
     @AfterMethod
     public void teardown(){
+
         driver.quit();
     }
 
