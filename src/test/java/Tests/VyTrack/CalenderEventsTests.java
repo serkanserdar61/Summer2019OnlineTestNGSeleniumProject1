@@ -12,32 +12,32 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utils.BrowserFactory;
 import java.util.concurrent.TimeUnit;
-public class CalenderEventsTests {
-    private WebDriver driver;
-    private WebDriverWait wait;
-    @BeforeMethod
-    public void setup(){
-        driver = BrowserFactory.getDriver("chrome");
-        //explicit wait
-        wait = new WebDriverWait(driver, 10);
-        //implicit wait
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //maximize browser
-        driver.manage().window().maximize();
-        driver.get("https://qa1.vytrack.com/");
-        driver.findElement(By.id("prependedInput")).sendKeys("storemanager85");
-        driver.findElement(By.id("prependedInput2")).sendKeys("UserUser123", Keys.ENTER);
-        WebElement activitiesElement = driver.findElement(By.linkText("Activities"));
-        wait.until(ExpectedConditions.visibilityOf(activitiesElement));
-        wait.until(ExpectedConditions.elementToBeClickable(activitiesElement));
-        activitiesElement.click();
-        WebElement calendarEventsElement = driver.findElement(By.linkText("Calendar Events"));
-        wait.until(ExpectedConditions.visibilityOf(calendarEventsElement));
-        wait.until(ExpectedConditions.elementToBeClickable(calendarEventsElement));
-        calendarEventsElement.click();
-        WebElement loaderMask = driver.findElement(By.cssSelector("div[class='loader-mask shown']"));
-        wait.until(ExpectedConditions.invisibilityOf(loaderMask));
-    }
+    public class CalenderEventsTests {
+        private WebDriver driver;
+        private WebDriverWait wait;
+        @BeforeMethod
+        public void setup(){
+            driver = BrowserFactory.getDriver("chrome");
+            //explicit wait
+            wait = new WebDriverWait(driver, 10);
+            //implicit wait
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            //maximize browser
+            driver.manage().window().maximize();
+            driver.get("https://qa1.vytrack.com/");
+            driver.findElement(By.id("prependedInput")).sendKeys("storemanager85");
+            driver.findElement(By.id("prependedInput2")).sendKeys("UserUser123", Keys.ENTER);
+            WebElement activitiesElement = driver.findElement(By.linkText("Activities"));
+            wait.until(ExpectedConditions.visibilityOf(activitiesElement));
+            wait.until(ExpectedConditions.elementToBeClickable(activitiesElement));
+            activitiesElement.click();
+            WebElement calendarEventsElement = driver.findElement(By.linkText("Calendar Events"));
+            wait.until(ExpectedConditions.visibilityOf(calendarEventsElement));
+            wait.until(ExpectedConditions.elementToBeClickable(calendarEventsElement));
+            calendarEventsElement.click();
+            WebElement loaderMask = driver.findElement(By.cssSelector("div[class='loader-mask shown']"));
+            wait.until(ExpectedConditions.invisibilityOf(loaderMask));
+        }
     @Test(description = "Verify page subtitle")
     public void test1(){
         String expectedSubtitle = "All Calendar Events";
