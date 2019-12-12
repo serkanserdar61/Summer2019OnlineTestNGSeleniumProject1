@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Personal files">
+
+    <test name="serkan file">
+    <classes>
+        <class name="tests.day8.CheckBoxes"/>
+        <class name="tests.day8.Dropdowns">
+            <methods>
+                <include name="test3"/>
+            </methods>
+            <!--include mean just run this test-->
+        </class>
+
+    </classes>
+</test>
+    <test name="serkan's file">
+        <classes>
+            <class name="tests.day8.practice"/>
+            <class name="tests.day8.RadioButtons">
+                   <methods>
+                       <exclude name="test.*"/>
+                   </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
+        <!--exclude mean don't run this test-->

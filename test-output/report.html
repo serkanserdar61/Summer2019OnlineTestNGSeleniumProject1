@@ -45,7 +45,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Dec 9, 2019 04:42:20 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Dec 10, 2019 05:05:45 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -62,6 +62,7 @@
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -104,10 +105,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='85.714%'><span class='strong'>6</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='68.75%'><span class='strong'>11</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>4</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>1</span> others
                 </div>
             </div>
         </div>
@@ -125,17 +126,87 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='15'>
+				<li class='test displayed active  skip' status='skip' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify that page subtitle is equals to Dashboard</span>
-						<span class='test-time'>Dec 9, 2019 04:42:26 PM</span>
+						<span class='test-name'>Login as username</span>
+						<span class='test-time'>Dec 10, 2019 05:05:57 PM</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:05:57 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:05:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+4ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='skip'>
+				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+				<td class='timestamp'>5:05:57 PM</td>
+				<td class='step-details'>
+						Test case was skipped : loginTest
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as user1</span>
+						<span class='test-time'>Dec 10, 2019 05:06:01 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:06:01 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:06:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+277ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:06:08 PM</td>
+				<td class='step-details'>
+						Login test passed for user user1
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as user2</span>
+						<span class='test-time'>Dec 10, 2019 05:06:12 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 04:42:26 PM</span>
-	<span class='label end-time'>Dec 9, 2019 04:42:29 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+116ms</span>
+	<span class='label start-time'>Dec 10, 2019 05:06:12 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:06:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+635ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -149,38 +220,24 @@
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>4:42:29 PM</td>
+				<td class='timestamp'>5:06:13 PM</td>
 				<td class='step-details'>
-						smokeTest
+						loginTest
 					
 				</td>
 			</tr>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>4:42:29 PM</td>
+				<td class='timestamp'>5:06:13 PM</td>
 				<td class='step-details'>
-						<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=78.0.3904.108)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-8BAL6GR', ip: '10.0.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\serka\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54970}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0798e679395858ade63d4e30d560aec5
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.BasePage.navigateTo(BasePage.java:183)
-	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:37)
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [Dashboard] but found [Loading...]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at tests.day20_ddt_with_excel.LoginTestWithExcel.loginTest(LoginTestWithExcel.java:57)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -213,21 +270,570 @@ Session ID: 0798e679395858ade63d4e30d560aec5
 	</table>
 </div>
 						<ul class='screenshots'>
-							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\serka\IdeaProjects\Summer2019OnlineTestNGSeleniumProject\test-output\Screenshots\smokeTest2019-12-09 16-42.png' src='C:\Users\serka\IdeaProjects\Summer2019OnlineTestNGSeleniumProject\test-output\Screenshots\smokeTest2019-12-09 16-42.png' data-src='C:\Users\serka\IdeaProjects\Summer2019OnlineTestNGSeleniumProject\test-output\Screenshots\smokeTest2019-12-09 16-42.png'></li>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\serka\IdeaProjects\Summer2019OnlineTestNGSeleniumProject\test-output\Screenshots\loginTest2019-12-10 17-06.png' src='C:\Users\serka\IdeaProjects\Summer2019OnlineTestNGSeleniumProject\test-output\Screenshots\loginTest2019-12-10 17-06.png' data-src='C:\Users\serka\IdeaProjects\Summer2019OnlineTestNGSeleniumProject\test-output\Screenshots\loginTest2019-12-10 17-06.png'></li>
 						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as user3</span>
+						<span class='test-time'>Dec 10, 2019 05:06:19 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:06:19 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:06:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+449ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>5:06:20 PM</td>
+				<td class='step-details'>
+						loginTest
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>5:06:20 PM</td>
+				<td class='step-details'>
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [Dashboard] but found [Loading...]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at tests.day20_ddt_with_excel.LoginTestWithExcel.loginTest(LoginTestWithExcel.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</textarea>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\serka\IdeaProjects\Summer2019OnlineTestNGSeleniumProject\test-output\Screenshots\loginTest2019-12-10 17-06.png' src='C:\Users\serka\IdeaProjects\Summer2019OnlineTestNGSeleniumProject\test-output\Screenshots\loginTest2019-12-10 17-06.png' data-src='C:\Users\serka\IdeaProjects\Summer2019OnlineTestNGSeleniumProject\test-output\Screenshots\loginTest2019-12-10 17-06.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as user4</span>
+						<span class='test-time'>Dec 10, 2019 05:06:25 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:06:25 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:06:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+857ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>5:06:26 PM</td>
+				<td class='step-details'>
+						loginTest
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>5:06:26 PM</td>
+				<td class='step-details'>
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [Dashboard] but found [Loading...]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at tests.day20_ddt_with_excel.LoginTestWithExcel.loginTest(LoginTestWithExcel.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</textarea>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\serka\IdeaProjects\Summer2019OnlineTestNGSeleniumProject\test-output\Screenshots\loginTest2019-12-10 17-06.png' src='C:\Users\serka\IdeaProjects\Summer2019OnlineTestNGSeleniumProject\test-output\Screenshots\loginTest2019-12-10 17-06.png' data-src='C:\Users\serka\IdeaProjects\Summer2019OnlineTestNGSeleniumProject\test-output\Screenshots\loginTest2019-12-10 17-06.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as user5</span>
+						<span class='test-time'>Dec 10, 2019 05:06:31 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:06:31 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:06:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+839ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>5:06:31 PM</td>
+				<td class='step-details'>
+						loginTest
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>5:06:31 PM</td>
+				<td class='step-details'>
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [Dashboard] but found [Loading...]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at tests.day20_ddt_with_excel.LoginTestWithExcel.loginTest(LoginTestWithExcel.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</textarea>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\serka\IdeaProjects\Summer2019OnlineTestNGSeleniumProject\test-output\Screenshots\loginTest2019-12-10 17-06.png' src='C:\Users\serka\IdeaProjects\Summer2019OnlineTestNGSeleniumProject\test-output\Screenshots\loginTest2019-12-10 17-06.png' data-src='C:\Users\serka\IdeaProjects\Summer2019OnlineTestNGSeleniumProject\test-output\Screenshots\loginTest2019-12-10 17-06.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as storemanager51</span>
+						<span class='test-time'>Dec 10, 2019 05:06:36 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:06:36 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:06:39 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+884ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:06:39 PM</td>
+				<td class='step-details'>
+						Login test passed for user storemanager51
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as storemanager52</span>
+						<span class='test-time'>Dec 10, 2019 05:06:43 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:06:43 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:06:49 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+746ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:06:49 PM</td>
+				<td class='step-details'>
+						Login test passed for user storemanager52
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as storemanager53</span>
+						<span class='test-time'>Dec 10, 2019 05:06:53 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:06:53 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:06:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+49ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:06:58 PM</td>
+				<td class='step-details'>
+						Login test passed for user storemanager53
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as storemanager54</span>
+						<span class='test-time'>Dec 10, 2019 05:07:02 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:07:02 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:07:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+926ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:07:07 PM</td>
+				<td class='step-details'>
+						Login test passed for user storemanager54
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as storemanager55</span>
+						<span class='test-time'>Dec 10, 2019 05:07:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:07:11 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:07:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+320ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:07:16 PM</td>
+				<td class='step-details'>
+						Login test passed for user storemanager55
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as salesmanager101</span>
+						<span class='test-time'>Dec 10, 2019 05:07:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:07:20 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:07:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+797ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:07:23 PM</td>
+				<td class='step-details'>
+						Login test passed for user salesmanager101
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as salesmanager102</span>
+						<span class='test-time'>Dec 10, 2019 05:07:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:07:27 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:07:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+864ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:07:32 PM</td>
+				<td class='step-details'>
+						Login test passed for user salesmanager102
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as salesmanager103</span>
+						<span class='test-time'>Dec 10, 2019 05:07:36 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:07:36 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:07:41 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+207ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:07:41 PM</td>
+				<td class='step-details'>
+						Login test passed for user salesmanager103
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as salesmanager104</span>
+						<span class='test-time'>Dec 10, 2019 05:07:45 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:07:45 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:07:50 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+964ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:07:50 PM</td>
+				<td class='step-details'>
+						Login test passed for user salesmanager104
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
 					</div>
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify that page subtitle is equals to All Manage Dashboards</span>
-						<span class='test-time'>Dec 9, 2019 04:42:34 PM</span>
+						<span class='test-name'>Login as salesmanager105</span>
+						<span class='test-time'>Dec 10, 2019 05:07:54 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 04:42:34 PM</span>
-	<span class='label end-time'>Dec 9, 2019 04:42:42 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+514ms</span>
+	<span class='label start-time'>Dec 10, 2019 05:07:54 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:07:59 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+88ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -241,184 +847,9 @@ Session ID: 0798e679395858ade63d4e30d560aec5
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:42:42 PM</td>
+				<td class='timestamp'>5:07:59 PM</td>
 				<td class='step-details'>
-						Verified that page subtitle 'All Manage Dashboards' is displayed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
-					<div class='test-heading'>
-						<span class='test-name'>Verify that page subtitle is equals to All Cars</span>
-						<span class='test-time'>Dec 9, 2019 04:42:46 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 04:42:46 PM</span>
-	<span class='label end-time'>Dec 9, 2019 04:42:53 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+116ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:42:53 PM</td>
-				<td class='step-details'>
-						Verified that page subtitle 'All Cars' is displayed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
-					<div class='test-heading'>
-						<span class='test-name'>Verify that page subtitle is equals to All Accounts</span>
-						<span class='test-time'>Dec 9, 2019 04:42:57 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 04:42:57 PM</span>
-	<span class='label end-time'>Dec 9, 2019 04:43:03 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+119ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:43:03 PM</td>
-				<td class='step-details'>
-						Verified that page subtitle 'All Accounts' is displayed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
-					<div class='test-heading'>
-						<span class='test-name'>Verify that page subtitle is equals to All Calls</span>
-						<span class='test-time'>Dec 9, 2019 04:43:07 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 04:43:07 PM</span>
-	<span class='label end-time'>Dec 9, 2019 04:43:14 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+942ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:43:14 PM</td>
-				<td class='step-details'>
-						Verified that page subtitle 'All Calls' is displayed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
-					<div class='test-heading'>
-						<span class='test-name'>Verify that page subtitle is equals to All Calendar Events</span>
-						<span class='test-time'>Dec 9, 2019 04:43:18 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 04:43:18 PM</span>
-	<span class='label end-time'>Dec 9, 2019 04:43:26 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+795ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:43:26 PM</td>
-				<td class='step-details'>
-						Verified that page subtitle 'All Calendar Events' is displayed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
-					<div class='test-heading'>
-						<span class='test-name'>Verify that page subtitle is equals to Open Opportunities</span>
-						<span class='test-time'>Dec 9, 2019 04:43:30 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 04:43:30 PM</span>
-	<span class='label end-time'>Dec 9, 2019 04:43:38 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+596ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:43:38 PM</td>
-				<td class='step-details'>
-						Verified that page subtitle 'Open Opportunities' is displayed
+						Login test passed for user salesmanager105
 					
 				</td>
 			</tr>
@@ -467,8 +898,8 @@ Session ID: 0798e679395858ade63d4e30d560aec5
 			<ul id='exception-collection' class='exception-collection'>
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.ElementNotInteractableException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+						<span class='exception-name'>java.lang.AssertionError</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>4</span></span>
 					</div>
 					<div class='exception-content hide'>
 						<div class='exception-tests'>
@@ -482,31 +913,134 @@ Session ID: 0798e679395858ade63d4e30d560aec5
 								</thead>
 								<tbody>
 									<tr>
-										<td>Dec 9, 2019 04:42:26 PM</td>
-										<td class='linked' test-id='15'>Verify that page subtitle is equals to Dashboard</td>
+										<td>Dec 10, 2019 05:06:12 PM</td>
+										<td class='linked' test-id='3'>Login as user2</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=78.0.3904.108)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-8BAL6GR', ip: '10.0.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\serka\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54970}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0798e679395858ade63d4e30d560aec5
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.BasePage.navigateTo(BasePage.java:183)
-	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:37)
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [Dashboard] but found [Loading...]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at tests.day20_ddt_with_excel.LoginTestWithExcel.loginTest(LoginTestWithExcel.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Dec 10, 2019 05:06:19 PM</td>
+										<td class='linked' test-id='4'>Login as user3</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [Dashboard] but found [Loading...]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at tests.day20_ddt_with_excel.LoginTestWithExcel.loginTest(LoginTestWithExcel.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Dec 10, 2019 05:06:25 PM</td>
+										<td class='linked' test-id='5'>Login as user4</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [Dashboard] but found [Loading...]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at tests.day20_ddt_with_excel.LoginTestWithExcel.loginTest(LoginTestWithExcel.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Dec 10, 2019 05:06:31 PM</td>
+										<td class='linked' test-id='6'>Login as user5</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [Dashboard] but found [Loading...]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at tests.day20_ddt_with_excel.LoginTestWithExcel.loginTest(LoginTestWithExcel.java:57)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -556,7 +1090,7 @@ Session ID: 0798e679395858ade63d4e30d560aec5
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>16</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -568,19 +1102,19 @@ Session ID: 0798e679395858ade63d4e30d560aec5
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Dec 9, 2019 04:42:20 PM</div>
+					<div class='panel-lead'>Dec 10, 2019 05:05:45 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Dec 9, 2019 04:43:38 PM</div>
+			 		<div class='panel-lead'>Dec 10, 2019 05:08:00 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 18s+818ms</div>
+					<div class='panel-lead'>0h 2m 15s+9ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -594,7 +1128,7 @@ Session ID: 0798e679395858ade63d4e30d560aec5
 						</tr>
 							<tr>
 								<td>Environment</td>
-								<td>QA1</td>
+								<td>https://qa2.vytrack.com/</td>
 							</tr>
 							<tr>
 								<td>Browser</td>
@@ -615,14 +1149,14 @@ Session ID: 0798e679395858ade63d4e30d560aec5
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 7,
-				passParent: 6,
-				failParent: 1,
+                parentCount: 16,
+				passParent: 11,
+				failParent: 4,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 0,
-				exceptionsParent: 1,
+				skipParent: 1,
+				exceptionsParent: 5,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -647,7 +1181,7 @@ Session ID: 0798e679395858ade63d4e30d560aec5
 		</script>
 		<script>
 			var timeline = {
-			        "Verify that page subtitle is equals to Dashboard":3.116,"Verify that page subtitle is equals to All Manage Dashboards":7.514,"Verify that page subtitle is equals to All Cars":7.116,"Verify that page subtitle is equals to All Accounts":6.119,"Verify that page subtitle is equals to All Calls":6.942,"Verify that page subtitle is equals to All Calendar Events":7.795,"Verify that page subtitle is equals to Open Opportunities":7.596
+			        "Login as username":0.004,"Login as user1":6.277,"Login as user2":1.635,"Login as user3":1.449,"Login as user4":0.857,"Login as user5":0.839,"Login as storemanager51":2.884,"Login as storemanager52":5.746,"Login as storemanager53":5.049,"Login as storemanager54":4.926,"Login as storemanager55":5.32,"Login as salesmanager101":2.797,"Login as salesmanager102":4.864,"Login as salesmanager103":5.207,"Login as salesmanager104":4.964,"Login as salesmanager105":5.088
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>

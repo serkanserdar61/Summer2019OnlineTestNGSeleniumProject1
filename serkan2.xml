@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression test">
+
+    <test name="tests regression">
+        <packages>
+            <package name="tests.day8"></package>
+        </packages>
+    </test>
+</suite>

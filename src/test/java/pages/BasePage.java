@@ -169,7 +169,7 @@ public class BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(module));
 
 
-
+       //BrowserUtils.clickIthWait(module);  use this if click is not working
         waitUntilLoaderMaskDisappear();
 
         module.click(); //once we clicked on module, submodule should be visible

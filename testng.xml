@@ -16,6 +16,7 @@
         <packages>
 
             <package name="tests.vytrack"></package>
+            <!-- package name="test.vytrack"/>  bu sekildede yazilabilir-->
         </packages>
     </test>
 </suite>
