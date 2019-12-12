@@ -1,0 +1,7 @@
+Dog
+Cat
+Scorpin
+Eagle
+Rabbit
+Lion
+Tiger
