@@ -5,3 +5,5 @@ Eagle
 Rabbit
 Lion
 Tiger
+Wolf
+Fox
