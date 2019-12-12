@@ -10,6 +10,8 @@ import org.openqa.selenium.WebDriverException;
 
 import org.openqa.selenium.WebElement;
 
+import org.openqa.selenium.interactions.Actions;
+
 import org.openqa.selenium.support.FindBy;
 
 import org.openqa.selenium.support.PageFactory;
@@ -21,6 +23,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.BrowserUtils;
 
 import utils.Driver;
+
+
+
+import javax.swing.*;
 
 
 
@@ -102,7 +108,7 @@ public class BasePage {
 
     public boolean waitUntilLoaderMaskDisappear() {
 
-        WebDriverWait wait = new WebDriverWait(Driver.get(), 10);
+        WebDriverWait wait = new WebDriverWait(Driver.get(), 30);
 
         try {
 
@@ -150,13 +156,15 @@ public class BasePage {
 
     public void navigateTo(String moduleName, String subModuleName) {
 
+        Actions actions = new Actions(Driver.get());
+
         String moduleLocator = "//*[normalize-space()='" + moduleName + "' and @class='title title-level-1']";
 
         String subModuleLocator = "//*[normalize-space()='" + subModuleName + "' and @class='title title-level-2']";
 
 
 
-        WebDriverWait wait = new WebDriverWait(Driver.get(), 10);
+        WebDriverWait wait = new WebDriverWait(Driver.get(), 20);
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(moduleLocator)));
 
@@ -169,18 +177,38 @@ public class BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(module));
 
 
-       //BrowserUtils.clickIthWait(module);  use this if click is not working
+
         waitUntilLoaderMaskDisappear();
 
-        module.click(); //once we clicked on module, submodule should be visible
 
 
+        BrowserUtils.clickWithWait(module); //if click is not working well
 
         WebElement subModule = Driver.get().findElement(By.xpath(subModuleLocator));
 
-        wait.until(ExpectedConditions.visibilityOf(subModule));
+        if (!subModule.isDisplayed()) {
 
-        subModule.click();
+            actions.doubleClick(module).doubleClick().build().perform();
+
+            try {
+
+                wait.until(ExpectedConditions.visibilityOf(subModule));
+
+            } catch (Exception ex) {
+
+                ex.printStackTrace();
+
+                BrowserUtils.clickWithJS(module);
+
+            }
+
+        }
+
+        BrowserUtils.clickWithWait(subModule); //if click is not working well
+
+        //it waits until page is loaded and ajax calls are done
+
+        BrowserUtils.waitForPageToLoad(10);
 
     }
 
@@ -237,6 +265,14 @@ public class BasePage {
         BrowserUtils.waitForClickablility(userName, 5).click();
 
         BrowserUtils.waitForClickablility(myUser, 5).click();
+
+    }
+
+
+
+    public void waitForPageSubTitle(String pageSubtitleText) {
+
+        new WebDriverWait(Driver.get(), 10).until(ExpectedConditions.textToBe(By.cssSelector("h1[class='oro-subtitle']"), pageSubtitleText));
 
     }
 
