@@ -36,7 +36,7 @@ public class CreateCarPage extends BasePage {
 
 
 
-    @FindBy(xpath = "//button[@class='btn btn-success action-button']")
+    @FindBy(css = "[class='btn btn-success action-button']")
 
     public WebElement saveAndCloseButtonElement;
 
@@ -53,6 +53,18 @@ public class CreateCarPage extends BasePage {
     @FindBy(name = "custom_entity_type[Logo][file]")
 
     public WebElement logoElement;
+
+
+
+    @FindBy(name = "custom_entity_type[ModelYear]")
+
+    public WebElement modelYearElement;
+
+
+
+    @FindBy(name = "custom_entity_type[Color]")
+
+    public WebElement colorElement;
 
 
 

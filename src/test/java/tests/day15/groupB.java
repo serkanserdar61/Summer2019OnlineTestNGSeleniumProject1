@@ -2,7 +2,9 @@ package tests.day15;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import utils.BrowserFactory;
@@ -37,10 +39,32 @@ public class groupB {
     public void test4(String urlname){
         System.out.println("test4 passed");
         System.out.println(urlname);
+    }
+    @Test(dataProvider="test5")
+    public void test6(String username,String Password){
+        System.out.println(username);
+        System.out.println(Password);
 
     }
 
+
+    @DataProvider
+    public Object[][] test5(){
+      Object[][] data=new Object[3][2];
+
+      data[0][0]="firstUsername";
+      data[0][1]="firstPassword";
+      data[1][0]="SecondUsername";
+      data[1][1]="SecondPassword";
+      data[2][0]="ThirdUsername";
+      data[2][1]="ThirdPassword";
+
+
+       return data;
     }
+
+
+}
 
 
 

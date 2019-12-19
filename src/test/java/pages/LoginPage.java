@@ -91,5 +91,6 @@ public class LoginPage extends BasePage{
     }
 
 
-
+    public void waitForPageSubTitle(String pageSubTitle) {
+    }
 }

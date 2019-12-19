@@ -12,6 +12,8 @@ import org.testng.ITestResult;
 
 import org.testng.annotations.*;
 
+import org.testng.asserts.SoftAssert;
+
 import utils.BrowserUtils;
 
 import utils.ConfigurationReader;
@@ -56,7 +58,9 @@ public abstract class TestBase {
 
 
 
-    //        <parameter name="test" value="regression"></parameter>
+
+
+    //         <parameter name="test" value="regression"></parameter>
 
     @BeforeTest
 

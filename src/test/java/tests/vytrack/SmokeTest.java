@@ -54,6 +54,8 @@ public class SmokeTest extends TestBase {
 
         loginPage.waitForPageSubTitle(pageSubTitle);
 
+
+
         Assert.assertEquals(loginPage.getPageSubTitle(), pageSubTitle);
 
 

@@ -1,10 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Regression test">
-
     <test name="tests regression">
         <groups>
             <run>
-                <include name="hello"/> <!-- or we can say exclude.then it runs except groups one-->
+                <include name="hello"/> <!-- or we can say exclude.then it runs except groups-->
             </run>
         </groups>
 
